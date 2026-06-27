@@ -1,0 +1,56 @@
+{
+  "name": "gcyphrq-ext-gexf",
+  "version": "0.9.0",
+  "description": "GEXF graph format extension for gcyphrq",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "graphology": "^0.26.0",
+    "graphology-gexf": "^0.13.2"
+  },
+  "peerDependencies": {
+    "gcyphrq": ">=0.60.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vitest": "^4.1.9"
+  },
+  "keywords": [
+    "gcyphrq",
+    "gcyphrq-extension",
+    "gexf",
+    "graph"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/plelevier/gcyphrq-ext-gexf"
+  },
+  "gcyphrqExtensions": {
+    "gexf": {
+      "type": "graph-input",
+      "version": "0.9.0",
+      "description": "Convert GEXF files to gcyphrq graph format",
+      "entryPoint": "./dist/index.js",
+      "fileExtensions": [
+        ".gexf",
+        ".xml"
+      ]
+    }
+  },
+  "allowScripts": {
+    "fsevents@2.3.3": true
+  }
+}

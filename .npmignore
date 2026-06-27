@@ -1,0 +1,15 @@
+# Source files (not needed at runtime)
+src/
+test/
+*.ts
+tsconfig.json
+vitest.config.ts
+
+# Dev files
+.editorconfig
+.eslintrc*
+.prettierrc*
+
+# Git
+.git/
+.gitignore
