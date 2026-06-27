@@ -1,6 +1,6 @@
 {
   "name": "gcyphrq-ext-gexf",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "GEXF graph format extension for gcyphrq",
   "type": "module",
   "main": "dist/index.js",
