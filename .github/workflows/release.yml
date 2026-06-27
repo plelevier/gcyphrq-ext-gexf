@@ -11,6 +11,7 @@ concurrency:
 jobs:
   bump:
     runs-on: ubuntu-latest
+    if: github.actor != 'gcyphrq-workflow-bot[bot]'
     env:
       GITHUB_ACTIONS_NODE_VERSION: 24
     permissions:
