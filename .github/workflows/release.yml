@@ -3,6 +3,9 @@ name: Release & Publish
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'package.json'
+      - 'package-lock.json'
 
 concurrency:
   group: version-bump
@@ -11,7 +14,6 @@ concurrency:
 jobs:
   bump:
     runs-on: ubuntu-latest
-    if: github.actor != 'gcyphrq-workflow-bot[bot]'
     env:
       GITHUB_ACTIONS_NODE_VERSION: 24
     permissions:
