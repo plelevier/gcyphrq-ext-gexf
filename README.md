@@ -6,8 +6,20 @@ Converts [GEXF](http://gexf.net/) files (produced by Gephi, NetworkX, igraph, et
 
 ## Install
 
+### Global CLI install
+
+Install `gcyphrq` and this extension globally so the `gcyphrq` command is available everywhere:
+
 ```bash
-npm install gcyphrq-ext-gexf
+npm install -g gcyphrq gcyphrq-ext-gexf
+```
+
+### Project dependency install
+
+Install both as project dependencies:
+
+```bash
+npm install gcyphrq gcyphrq-ext-gexf
 ```
 
 ## Usage
