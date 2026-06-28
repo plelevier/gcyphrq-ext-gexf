@@ -7,7 +7,7 @@ on:
       - 'package.json'
       - 'package-lock.json'
     tags-ignore:
-      - 'v*' # Évite de boucler si un tag est poussé
+      - 'v*'
 
 concurrency:
   group: version-bump
