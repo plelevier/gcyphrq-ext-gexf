@@ -41,7 +41,6 @@
   "gcyphrqExtensions": {
     "gexf": {
       "type": "graph-input",
-      "version": "0.9.0",
       "description": "Convert GEXF files to gcyphrq graph format",
       "entryPoint": "./dist/index.js",
       "fileExtensions": [
